@@ -23,13 +23,14 @@ body {
 	background-repeat: no-repeat;
 }
 
-.ryu-standing, .ryu-ready, .ryu-throwing {
+.ryu-standing, .ryu-ready, .ryu-throwing, .ryu-cool {
 	width: 494px;
 	height: 659px;
 	float: left;
+	background-repeat: no-repeat;
 }
 
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool {
 	display:none;
 }
 
@@ -43,6 +44,11 @@ body {
 
 .ryu-throwing {
 	background-image: url("../images/ryu-throwing-hadouken.png");
+	width: 564px;
+}
+
+.ryu-cool {
+	background-image: url("../images/ryu-cool.gif");
 }
 
 .hadouken {
@@ -60,38 +66,44 @@ body {
 .instructions {
 	width:50%;
 	float: right;
+	position: relative;
+}
+
+.frame1, .frame2, .frame3, .frame4 {
+	position: absolute;
+	font-size: 40px;
 }
 
 .frame1 {
-	display:none;
-	font-size: 40px;
-	text-align: center;
-	margin-top:150px;
+	background-image: url("../images/sf-logo.png");
+	width: 682px;
+	height: 314px;
 }
 
 .frame2 {
 	display:none;
-	font-size: 40px;
-	text-align: center;
-	margin-top:150px;
+	top: 190px;
+	left: 100px;
 }
 
 .frame3 {
 	display:none;
-	font-size: 40px;
-	text-align: center;
-	margin-top:150px;
+	top: 190px;
+	left: 100px;
+}
+
+.frame4 {
+	display: none;
 }
 
 .instructions #part1 {
-	width: 50%;
-	font-size: 38px;
-	margin: 50px 0 30px;
+	margin: 50px 0 0;
+	width: 60%;
 }
 
 .instructions #part2 {
-	width: 50%;
-	font-size: 38px;
-	margin: auto;
-}
+	width: 70%;
+	float: right;
+	margin-top: 80px;
+	}
 
